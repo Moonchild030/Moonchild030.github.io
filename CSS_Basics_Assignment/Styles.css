@@ -1,0 +1,35 @@
+.color-example
+{
+    color:lavenderblush;
+    background-color:#191970;
+    border:5px solid rgb(165, 121, 200);
+}
+
+.header-example
+{
+font-family: "Lucida Handwriting",Lucida,cursive;
+color: lightpink;
+}
+
+.list-example
+{
+   list-style-type:circle;
+   color:cornflowerblue;
+}
+
+.text-example
+{
+font-family: "Garamond",Garamond,Serif;
+font-size: small;
+color: cornflowerblue;
+text-transform: capitalize;
+text-decoration: underline;
+}
+
+.div-example
+{
+    background-color: rgb(243, 207, 239);
+    border:2px solid rgb(225, 185, 238);
+    font-family:"Garamond",Garamond,Serif;
+    font-size: large;
+}
