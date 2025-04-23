@@ -1,0 +1,22 @@
+h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#div1{background-color: rgb(196, 155, 235);
+}
+#div2{background-color: rgb(179, 232, 233);
+}
+#div3{background-color: rgb(237, 183, 209);
+}
+#div4 {background-color: rgb(209, 239, 167);}
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }  
+
+#tallflower {
+    border-radius: 60px;
+    width: 200px;
+    float: right;
+}
