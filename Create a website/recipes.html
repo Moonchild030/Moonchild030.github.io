@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moonlight Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="recipes_css.css">
+<link rel="icon" type="image/x-icon" href="/food/favicon.ico">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-pale-red w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <img src="food/kitty.jpeg" class="w3-bar-item w3-image w3-circle" style="width: 4%" alt="Kitty Logo" />
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-pale-green w3-round-xxlarge">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="menu-wrapper w3-content">
+  <div class="menu-content">
+    <div class="w3-quarter">&nbsp;</div> 
+    <div class="w3-half">
+  <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sweet');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">Sweet</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Savory');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">Savory</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Sweet" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Enchanted Forest Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Buttercream, edible flowers, matcha and white chocolate flavoured</p>
+      <hr>
+   
+      <h1><b>Moonlight macarons</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Lavender and honey macarons dusted with silver shimmer.</p>
+      <hr>
+      
+      <h1><b>Forest Fae Cake Slice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Matcha sponge with layers of elderflower cream, topped with candied violet petals.</p>
+      <hr>
+
+      <h1><b>Phoenix Feather Tarts</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Flaky tart with blood orange curd, orange zest, and flame-colored sugar tuile feathers.</p>
+      <hr>
+
+      <h1><b>Witch’s Brew Brownies</b> <span class="w3-tag w3-purple w3-round">Favourite!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Black cocoa brownies with swirling mint or cherry marble, topped with neon sugar runes.</p>
+      <hr>
+
+      <h1><b>Mystic Scroll Cinnamon Rolls</b> <span class="w3-tag w3-purple w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Rolled with purple berry glaze, decorated like an ancient scroll with icing script</p>
+    </div>
+    <div id="Savory" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Goblin’s Garden Toast</b> <span class="w3-tag w3-purple w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Herb sourdough, whipped goat cheese, wild mushrooms, microgreens.</p>
+      <hr>
+   
+      <h1><b>Elven Leaf Quiche</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Spinach and sun-dried tomato quiche cut into leaf shapes, served with green goddess dip.</p>
+      <hr>
+      
+      <h1><b>Knight’s Feast Flatbread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Rustic flatbread with spiced lamb, feta, pomegranate seeds, and fresh mint</p>
+      <hr>
+
+      <h1><b>Mermaid’s Bounty Tartlet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Savory seaweed tart with smoked salmon mousse, dill, and a pearl (mozzarella ball)</p>
+    </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Starlight Elixir</b> <span class="w3-tag w3-purple w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Butterfly pea flower tea lemonade that changes color when mixed.</p>
+      <hr>
+   
+      <h1><b>Enchanted Apple Cider</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Spiced apple cider with caramel foam and cinnamon stick wand.</p>
+      <hr>
+      
+      <h1><b>Moonbeam Milkshake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Vanilla milkshake swirled with blue spirulina and edible pearls</p>
+      <hr>
+      
+      <h1><b>Potion of Healing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Strawberry, basil, and lemon cooler served in a corked potion bottle</p>
+       </div> 
+<!-- End of .menu-content -->
+</div>
+<div class="w3-quarter" style="max-width: 10%; position: relative;">
+  <img src="food/pixiv-removebg.png" alt="character">
+<div class="speech-bubble">Here is the menu!</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Inspired by moonlit nights, enchanted forests, and tales of faraway kingdoms, our café is a space where reality softens and imagination takes the lead. We believe that food should delight not just the palate, but the spirit—so we serve cakes with a hint of stardust, drinks that sparkle like potions, and cozy meals fit for wandering adventurers.</p>
+    <p><strong>The owner?</strong> Snow White<img src="/food/snowwhite.jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="food/download (16).jpeg" style="width:100%" class="w3-margin-top w3-margin-bottom w3-circle" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p> Moonlight cafe</p> 
+  <a href="#"><img src="food/kitty.jpeg" class="w3-bar-item w3-image w3-circle kittylogo" alt="Kitty Logo" /></a>
+<a href="https://www.instagram.com/lobelyjin/"><img src="food/instagram-logo.png" class="instagram" alt="Instagram"></a>
+
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-indigo", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-indigo";
+}
+document.getElementById("myLink").click();
+
+var myIndex = 0;
+      const images = ["food/bakery.jpeg","food/mis15.jpeg","food/cake.jpeg"];
+      carousel();
+
+      function carousel() {
+        var x = document.getElementById("home");
+        myIndex++;
+        if (myIndex > images.length) {
+          myIndex = 1;
+        }
+        x.style.backgroundImage = "url('" + images[myIndex - 1] + "')";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      } 
+</script>
+
+</body>
+</html>

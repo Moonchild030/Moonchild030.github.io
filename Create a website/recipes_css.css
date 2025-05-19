@@ -1,0 +1,92 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Mystery Quest", system-ui;
+  }
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size:50%;
+  background-image: url("food/download\ \(15\).jpeg");
+  background-position: center;
+  min-height: 100%;
+}
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .menu-content {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .menu-character {
+    text-align: center;
+    position: relative;
+    min-width: 150px;
+  }
+
+  .menu-character img {
+    width: 120px;
+    height: auto;
+  }
+
+ .speech-bubble {
+  position: absolute;
+  top: 57px;
+  left: 270%;
+  background: #000000;
+  border: 2px solid #000;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  width: 120px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Mystery Quest', cursive;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #fff7e6;
+  border-left: 0;
+  margin-top: -5px;
+}
+
+.instagram{
+  width:3%;
+}
+
+.kittylogo{
+  width: 2.7%;
+}
+
+@media only screen and (max-width:600px) {
+  .speech-bubble{ 
+    top:57px;
+    left:650%;
+  }
+
+  .instagram {
+    width: 10%;
+  }
+
+  .bgimg{
+    background-size:cover;
+  }
+
+  .kittylogo{
+    width: 9%;
+  }
+}
+
+
+
